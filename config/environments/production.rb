@@ -82,5 +82,5 @@ Rails.application.configure do
   end
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { :host => "#{ENV['APP_DOMAIN']}:#{ENV['APP_PORT']}" } 
+  config.action_mailer.default_url_options = { host: ENV['APP_HOST'] } 
 end
