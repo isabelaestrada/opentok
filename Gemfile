@@ -56,4 +56,4 @@ gem 'pg'
 gem 'devise'
 gem 'dotenv-rails'
 gem 'whenever', require: false
-gem 'geocoder'
+gem 'geocoder', '~> 1.4.5'
