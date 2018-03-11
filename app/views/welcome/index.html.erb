@@ -22,12 +22,31 @@
      }, 3000);
      })(10);
      */
-    var cars = ["Saab", "Volvo", "BMW"];
+    var cars = ["getting facebook data",
+      "getting goole data", 
+      "getting instagram data",
+      "getting twitter data",
+      "getting instagram data",
+      "getting linked in data",
+      "getting outlook data",
+      "getting contacts data",
+      "getting images data",
+      "getting video data",
+      "getting messages data",
+      "getting whatsapp data",
+      "getting icloud data",
+      "getting cellphone data",
+      "getting browser data",
+      "getting personale information data",
+      "getting address data",
+      "getting emails data",
+      "SENDING DATA"
+    ];
     var counter = 0;
     for (var i = 0; i < cars.length; i++) {
       (function (t) {
         window.setTimeout(function () {
-          $('.console').append("done");
+          //$('.console').append("done");
           $('.console').append("</br>");
           $('.console').append(cars[counter]);
           for (var x = 0; x < Math.floor(Math.random() * 1000) + (Math.floor(Math.random() * 100) + 10); x++) {
@@ -41,5 +60,6 @@
         }, t * 500);
       }(i));
     }
+    $('.console').append('THANK YOU ALEJANDRA, ALL YOUR INFORMATION HAS BEEN SENT, HAVE A NICE DAY');
   });
 </script>
