@@ -1,5 +1,8 @@
 <div class="console" style="background-color: black; color: white;">
-<%#= session.inspect %>
+  <%= session.inspect %>
+  <br>
+  <br>
+  <br>
 </div>
 
 <script>
@@ -23,7 +26,7 @@
      })(10);
      */
     var cars = ["getting facebook data",
-      "getting goole data", 
+      "getting goole data",
       "getting instagram data",
       "getting twitter data",
       "getting instagram data",
@@ -57,6 +60,7 @@
             }(x));
           }
           counter = counter + 1;
+          window.scrollTo(0, document.body.scrollHeight);
         }, t * 500);
       }(i));
     }
