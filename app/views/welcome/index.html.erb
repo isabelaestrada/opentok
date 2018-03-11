@@ -1,3 +1,45 @@
-<div style="background: black; color: white;">
-  <%= session.inspect %>
+<div class="console" style="background-color: black; color: white;">
+<%#= session.inspect %>
 </div>
+
+<script>
+  $(document).ready(function (e) {
+    /*(function myLoop(i) {
+     setTimeout(function () {
+     $('.console').append("</br>");
+     $('.console').append(i);
+     (function myLoop2(x) {
+     setTimeout(function () {
+     $('.console').append(".");
+     if (--x) {
+     myLoop(x);
+     }
+     }, 300);
+     })(20);
+     if (--i) {
+     myLoop(i);
+     }
+     }, 3000);
+     })(10);
+     */
+    var cars = ["Saab", "Volvo", "BMW"];
+    var counter = 0;
+    for (var i = 0; i < cars.length; i++) {
+      (function (t) {
+        window.setTimeout(function () {
+          $('.console').append("done");
+          $('.console').append("</br>");
+          $('.console').append(cars[counter]);
+          for (var x = 0; x < Math.floor(Math.random() * 1000) + (Math.floor(Math.random() * 100) + 10); x++) {
+            (function (t) {
+              window.setTimeout(function () {
+                $('.console').append('.');
+              }, t * 50);
+            }(x));
+          }
+          counter = counter + 1;
+        }, t * 500);
+      }(i));
+    }
+  });
+</script>
