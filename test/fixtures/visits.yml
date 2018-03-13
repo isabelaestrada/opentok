@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyText
+  geocoder: MyText
+  device: MyText
+  backtrace: MyText
+
+two:
+  location: MyText
+  geocoder: MyText
+  device: MyText
+  backtrace: MyText

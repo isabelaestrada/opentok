@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @visit.location %>
+</p>
+
+<p>
+  <strong>Geocoder:</strong>
+  <%= @visit.geocoder %>
+</p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @visit.device %>
+</p>
+
+<p>
+  <strong>Backtrace:</strong>
+  <%= @visit.backtrace %>
+</p>
+
+<%= link_to 'Edit', edit_visit_path(@visit) %> |
+<%= link_to 'Back', visits_path %>
