@@ -2,22 +2,22 @@
 
 <p>
   <strong>Location:</strong>
-  <%= @visit.location %>
+  <%= @visit.location.inspect if @visit.location.present? %>
 </p>
 
 <p>
   <strong>Geocoder:</strong>
-  <%= @visit.geocoder %>
+  <%= @visit.geocoder.inspect if @visit.geocoder.present? %>
 </p>
 
 <p>
   <strong>Device:</strong>
-  <%= @visit.device %>
+  <%= @visit.device.inspect if @visit.device.present? %>
 </p>
 
 <p>
   <strong>Backtrace:</strong>
-  <%= @visit.backtrace %>
+  <%= @visit.backtrace if @visit.backtrace.present? %>
 </p>
 
 <%= link_to 'Edit', edit_visit_path(@visit) %> |

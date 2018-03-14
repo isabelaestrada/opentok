@@ -16,10 +16,10 @@
   <tbody>
     <% @visits.each do |visit| %>
       <tr>
-        <td><%= visit.location %></td>
-        <td><%= visit.geocoder %></td>
-        <td><%= visit.device %></td>
-        <td><%= visit.backtrace %></td>
+        <td><%= visit.location.inspect if visit.location.present? %></td>
+        <td><%= visit.geocoder.inspect if visit.geocoder.present? %></td>
+        <td><%= visit.device.inspect if visit.device.present? %></td>
+        <td><%= visit.backtrace.inspect if visit.backtrace.present? %></td>
         <td><%= link_to 'Show', visit %></td>
         <td><%= link_to 'Edit', edit_visit_path(visit) %></td>
         <td><%= link_to 'Destroy', visit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
